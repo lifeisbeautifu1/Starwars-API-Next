@@ -33,6 +33,11 @@ const NavbarContainer = styled.div`
   right: 0;
   left: 0;
   z-index: 10;
+
+  @media (max-width: 768px) {
+    top: 230px;
+    height: 35px;
+  }
 `;
 
 const NavbarLinks = styled.div`

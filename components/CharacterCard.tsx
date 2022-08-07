@@ -66,6 +66,11 @@ const CardContainer = styled.div`
   justify-content: center;
   border-radius: 0.375rem;
 
+  @media (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
+  }
+
   > img {
     border-top-left-radius: 0.375rem;
     border-bottom-left-radius: 0.375rem;
@@ -73,6 +78,10 @@ const CardContainer = styled.div`
     object-fit: contain;
     border-right: 2px solid #9e4f60;
     background-color: #151515;
+    @media (max-width: 768px) {
+      width: 100%;
+      /* border-radius: 0.375rem; */
+    }
   }
 `;
 const CharacterInfo = styled.div`
@@ -85,6 +94,11 @@ const CharacterInfo = styled.div`
   background-repeat: repeat-x;
   background-origin: top left;
   background-color: #282727;
+  @media (max-width: 768px) {
+    width: 100%;
+    margin: 0 auto;
+    /* border-radius: 0.375rem; */
+  }
 
   > h1 {
     width: 100%;

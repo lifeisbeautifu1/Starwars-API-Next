@@ -48,6 +48,10 @@ const HeaderContainer = styled.div`
   left: 0;
   right: 0;
   z-index: 10;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const HeaderImage = styled.img`
@@ -57,7 +61,11 @@ const HeaderImage = styled.img`
   height: 180px;
   filter: brightness(0) invert(1);
 `;
-const HeaderLeft = styled.div``;
+const HeaderLeft = styled.div`
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;
 const HeaderRight = styled.div``;
 const HeaderSearch = styled.div`
   border-radius: 0.25rem;
@@ -106,6 +114,11 @@ const HeaderActions = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
+
+  @media (max-width: 768px) {
+    margin: 1rem auto;
+    justify-content: center;
+  }
 
   > button {
     background-color: transparent;

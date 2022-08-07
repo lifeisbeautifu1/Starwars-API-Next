@@ -82,6 +82,10 @@ const CharactersContainer = styled.div`
   justify-content: center;
   padding: 1.875rem;
   background-color: #151515;
+
+  @media (max-width: 768px) {
+    margin-top: 300px;
+  }
 `;
 
 const Button = styled.button`

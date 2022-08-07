@@ -44,6 +44,7 @@ export default Footer;
 
 const FooterContainer = styled.div`
   margin-top: 4.375rem;
+  width: 100%;
   display: grid;
   place-items: center;
   background-color: #000;
@@ -73,6 +74,11 @@ const FooterLinksContainer = styled.div`
   flex-wrap: wrap;
   padding: 0 2.5rem;
 
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 0.625rem;
+  }
+
   > a {
     padding: 0 11px 0 0.75rem;
     color: #ccc;
@@ -99,5 +105,9 @@ const FooterLinksContainer = styled.div`
   }
   > a:not(:last-child) {
     border-right: 1px solid #ccc;
+
+    @media (max-width: 768px) {
+      border-right: none;
+    }
   }
 `;

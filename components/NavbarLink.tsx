@@ -22,6 +22,9 @@ const NavLink = styled.a`
   height: 100%;
   text-decoration: none;
   padding: 0 1.5625rem;
+  @media (max-width: 768px) {
+    padding: 0 1rem;
+  }
   transition: color 100ms;
   color: #999;
   cursor: pointer;
@@ -34,5 +37,9 @@ const NavLink = styled.a`
   > h4 {
     font-size: 0.875rem;
     letter-spacing: 1px;
+
+    @media (max-width: 768px) {
+      font-size: 0.7rem;
+    }
   }
 `;

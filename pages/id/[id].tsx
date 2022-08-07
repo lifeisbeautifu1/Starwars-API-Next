@@ -46,6 +46,9 @@ export const getStaticPaths: GetStaticPaths = async () => {
 const CharacterContainer = styled.div`
   padding: 2.5rem;
   margin-top: 200px;
+  @media (max-width: 768px) {
+    margin-top: 300px;
+  }
 `;
 
 const StarfieldLeft = styled.div`
